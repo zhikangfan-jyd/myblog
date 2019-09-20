@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="utf-8">
+
+<title>范**的个人博客</title>
+
+
+<link rel="stylesheet" type="text/css" href="./bootstrap-wysiwyg/lib/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="./bootstrap-wysiwyg/lib/css/prettify.css"></link>
+<link rel="stylesheet" type="text/css" href="./bootstrap-wysiwyg/src/bootstrap-wysihtml5.css"></link>
+
+<style type="text/css" media="screen">
+	.btn.jumbo {
+		font-size: 20px;
+		font-weight: normal;
+		padding: 14px 24px;
+		margin-right: 10px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	}
+	.submit_btn{
+		width: 90px;
+		height: 40px;
+		border-radius: 5px;
+		background-color: rgb(70, 131, 245);
+		border: none;
+		color: #fff;
+		font-size: 15px;
+		letter-spacing: 2px;
+		font-weight: 600;
+	}
+	.submit_btn:hover{
+		background-color: rgb(40, 108, 235);
+	}
+	.edit_title{
+		margin-bottom: 10px;
+	}
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30181385-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="hero-unit" style="margin-top:40px">
+		<h2 class="edit_title">文章编辑</h2>
+		<input type="text" placeholder="请输入文章标题..." id="blog_title">
+		<input type="text" placeholder="请输入标签，用“，”隔开" id="blog_tags">
+		<textarea class="textarea" placeholder="请输入内容 ..." style="width: 810px; height: 200px" id="blog_content"></textarea>
+		<button onclick="submit()" class="submit_btn">提交</button>
+	</div>
+	
+</div>
+
+
+<script src="./bootstrap-wysiwyg/lib/js/wysihtml5-0.3.0.js"></script>
+<script src="./bootstrap-wysiwyg/lib/js/jquery-1.7.2.min.js"></script>
+<script src="./bootstrap-wysiwyg/lib/js/prettify.js"></script>
+<script src="./bootstrap-wysiwyg/lib/js/bootstrap.min.js"></script>
+<script src="./bootstrap-wysiwyg/src/bootstrap-wysihtml5.js"></script>
+
+<script>
+	$('.textarea').wysihtml5();
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	$(prettyPrint);
+</script>
+<script>
+
+	
+	function submit () {
+		var blog_title = $('#blog_title').val();
+		var blog_tags = $('#blog_tags').val();
+		var blog_content =  $('#blog_content').val();
+
+		$.ajax({
+			url:`/editBlog?title=${blog_title}&tags=${blog_tags}`,
+			type:'post',
+			data:blog_content,
+			success:function (res) {
+
+			},
+			error:function (res) {
+
+			}
+		})
+	}
+
+</script>
+
+</body>
+</html>

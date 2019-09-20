@@ -1,0 +1,100 @@
+.blog{
+    width: 96%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 4px 3px rgb(73, 72, 72);
+    padding: 10px 15px;
+
+}
+.blog_title{
+    font-size:18px;
+    font-weight: 600;
+}
+.blog_msg{
+    padding: 10px 0px 20px 0px ;
+    border-bottom: 1px solid rgb(158, 154, 154);
+    margin-bottom: 20px;
+}
+.blog_content{
+    padding: 0px 10px 20px 10px;
+    word-wrap:break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.send_comments{
+    background-color: rgb(60, 163, 247);
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 3px 4px 3px  rgb(158, 154, 154);
+    margin-top: 50px;
+}
+
+.send_comments input{
+    width: 300px;
+    height: 34px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 5px;
+    padding-left:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px; 
+}
+.send_comments textarea{
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgb(221, 218, 218);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.send_comments button{
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(164, 221, 98);
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(104, 235, 104);
+    cursor: pointer;
+}
+.send_comments button:hover{
+    background-color: rgb(26, 231, 26);
+}
+
+.blog_comments{
+    background-color: #807f7f;
+}
+.blog_comments_msg{
+    margin-top: 20px;
+    padding: 10px ;
+    display: inline-block;
+    width: 100%;
+
+}
+.blog_comment{
+    width: 95%;
+    background-color: #37a9f5;
+    border:1px dashed #ccc;
+    padding: 10px 10px 20px 10px;
+    margin-top: 10px;
+    color: rgb(106, 226, 95);
+}
+.blog_comment span{
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+}
+.blog_comment div{
+    display: inline-block;
+    width: 100%;
+    padding-left:10px;
+    margin-top: 10px;
+}

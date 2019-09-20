@@ -1,0 +1,45 @@
+.every_day{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 4px 3px #696767;
+}
+
+.article_list{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.article{
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow:1px 2px 2px  #696767;
+    overflow: hidden;
+    margin-top:15px;
+    width: 100%;
+}
+.article_title{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(180, 62, 26);
+    padding: 20px 10px 5px 10px;
+}
+.article_title:hover{
+    color: rgb(243, 86, 38);
+}
+.article_content{
+    font-size: 15px;
+    color: rgb(51, 50, 50);
+    padding: 0px 10px 20px 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+.article_foot{
+    font-size: 14px;
+    color: #ffff;
+    padding: 10px 10px 5px 10px;
+    background-color: rgb(67, 129, 243);
+}

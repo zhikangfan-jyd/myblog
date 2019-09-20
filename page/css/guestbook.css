@@ -1,0 +1,12 @@
+.description{
+    background-color: #fff;
+    width: 96%;
+    border-radius: 5px;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 3px 4px 3px rgb(119, 116, 116);
+}
+.description p{
+    margin-top: 15px;
+    padding: 0px 0px 0px 10px;
+    font-size: 15px;
+}
